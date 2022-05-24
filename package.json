@@ -1,0 +1,23 @@
+{
+  "name": "the-internet-app-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natalia-iukhimenko/the-internet-app-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natalia-iukhimenko/the-internet-app-tests/issues"
+  },
+  "homepage": "https://github.com/natalia-iukhimenko/the-internet-app-tests#readme",
+  "dependencies": {
+    "cypress": "^9.7.0"
+  }
+}
