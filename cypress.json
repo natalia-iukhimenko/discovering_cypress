@@ -1,4 +1,8 @@
 {
   "baseUrl": "http://the-internet.herokuapp.com",
-  "integrationFolder": "cypress/tests"
+  "integrationFolder": "cypress/tests",
+  "env": {
+    "username": "tomsmith",
+    "password": "SuperSecretPassword!"
+  }
 }
