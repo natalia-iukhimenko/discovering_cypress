@@ -1,5 +1,5 @@
-import loginPage from "../support/pages/login_page";
-import securePage from "../support/pages/secure_page";
+import loginPage from "../../support/ui/pages/login_page";
+import securePage from "../../support/ui/pages/secure_page";
 const { faker } = require("@faker-js/faker");
 
 describe("Test suite for login functionality", () => {

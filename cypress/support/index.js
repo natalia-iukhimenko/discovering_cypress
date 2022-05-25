@@ -1,1 +1,1 @@
-import './commands'
+import './ui/ui_commands'
