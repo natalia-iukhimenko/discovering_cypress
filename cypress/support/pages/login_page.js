@@ -27,12 +27,33 @@ class LoginPage {
 
     clickLoginButton() {
         this.#loginButton.click();
+        return this;
     }
 
     login(username, password) {
         this.setUsername(username)
             .setPassword(password)
             .clickLoginButton();
+    }
+
+    checkUrl() {
+        cy.location("pathname").should("equal", "/login");
+        return this;
+    }
+
+    checkErrorMessage(expectedText) {
+        this.#flashMessageElement.should("have.class", "error")
+            .invoke("text")
+            .should("include", expectedText);
+        return this;
+    }
+
+    checkWrongUsernameMessageDisplayed() {
+        return this.checkErrorMessage("Your username is invalid");
+    }
+
+    checkWrongPasswordMessageDisplayed() {
+        return this.checkErrorMessage("Your password is invalid");
     }
 }
 export default new LoginPage();
