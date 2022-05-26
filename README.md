@@ -42,3 +42,4 @@ npm run report:generate
 ```sh
 npm run report:open
 ```
+![report](https://user-images.githubusercontent.com/55945353/170489003-1ba37b40-b331-47b2-b22c-dc9aeb73baae.jpg)
