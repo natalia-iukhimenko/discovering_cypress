@@ -10,3 +10,7 @@
 /.idea/
 *.iml
 *.iws
+
+#Allure
+/allure-results
+/allure-report

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run"
+    "cy:run": "npx cypress run --env allure=true",
+    "report:generate": "npx allure generate allure-results -o allure-report --clean",
+    "report:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+    "report:open": "npx allure open allure-report"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
     "cypress": "^9.7.0"
   },
   "devDependencies": {
-    "@faker-js/faker": "^6.3.1"
+    "@faker-js/faker": "^6.3.1",
+    "@shelex/cypress-allure-plugin": "^2.26.5"
   }
 }
