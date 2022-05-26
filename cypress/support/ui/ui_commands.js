@@ -1,3 +1,5 @@
+let baseUrl = Cypress.env("uiUrl");
+
 Cypress.Commands.add("openLoginPage", () => {
-    cy.visit("http://the-internet.herokuapp.com/login");
+    cy.visit(`${baseUrl}/login`);
 })

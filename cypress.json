@@ -3,6 +3,7 @@
   "integrationFolder": "cypress/tests",
   "env": {
     "username": "tomsmith",
-    "password": "SuperSecretPassword!"
+    "password": "SuperSecretPassword!",
+    "uiUrl": "the-internet.herokuapp.com"
   }
 }
