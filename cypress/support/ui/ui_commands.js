@@ -1,3 +1,3 @@
 Cypress.Commands.add("openLoginPage", () => {
-    cy.visit("/login");
+    cy.visit("http://the-internet.herokuapp.com/login");
 })

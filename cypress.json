@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://the-internet.herokuapp.com",
+  "baseUrl": "https://reqres.in",
   "integrationFolder": "cypress/tests",
   "env": {
     "username": "tomsmith",
