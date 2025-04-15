@@ -1,9 +1,0 @@
-{
-  "baseUrl": "https://reqres.in",
-  "integrationFolder": "cypress/tests",
-  "env": {
-    "username": "tomsmith",
-    "password": "SuperSecretPassword!",
-    "uiUrl": "the-internet.herokuapp.com"
-  }
-}
