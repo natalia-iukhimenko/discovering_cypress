@@ -1,3 +1,4 @@
+const { allureCypress } = require("allure-cypress/reporter");
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
@@ -7,10 +8,11 @@ module.exports = defineConfig({
     uiUrl: 'the-internet.herokuapp.com',
   },
   e2e: {
-    // We've imported your old cypress plugins here.
-    // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
-      return require('./cypress/plugins/index.js')(on, config)
+      allureCypress(on, config, {
+        resultsDir: "allure-results",
+      });
+      return config;
     },
     baseUrl: 'https://reqres.in',
     specPattern: 'cypress/tests/**/*.cy.{js,jsx,ts,tsx}',

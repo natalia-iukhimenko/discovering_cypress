@@ -1,7 +1,7 @@
 const { faker } = require("@faker-js/faker");
 import {checkStatus200} from "../../support/api/check_utils";
 
-describe("E2E tests", () => {
+describe("API tests", () => {
     it("Registration & login scenario", () => {
         const userId = 1;
         const passwordLength = 6;
