@@ -6,7 +6,7 @@ This repository represents api- and ui-tests on Cypress and JavaScript.
 - Allure (for reporting)
 - Faker (for test data generation).
 
-## How to run the tests locally:
+## How to run the tests locally
 1. Download and install [Node.js](https://nodejs.org/en/download)
 2. Clone this project, execute the following command from project's root folder to install Node packages:
 ```sh
@@ -28,7 +28,7 @@ npm run report:generate
 ```sh
 npm run report:open
 ```
-## How to run the tests in Docker:
+## How to run the tests in Docker
 1. Download and install [Docker](https://docs.docker.com/engine/install/)
 2. Execute this command to start tests in Chrome browser:
 ```sh
