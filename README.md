@@ -28,3 +28,17 @@ npm run report:generate
 ```sh
 npm run report:open
 ```
+### How to run the tests in Docker:
+1. Download and install [Docker](https://docs.docker.com/engine/install/)
+2. Execute this command to start tests in Chrome browser:
+```sh
+docker run -it -v ${PWD}:/e2e -w /e2e --name cypress-tests cypress/included:14.2.0 -b chrome
+```
+3. Generate Allure report outside container:
+```sh
+npm run report:generate
+```
+4. Open the generated Allure report:
+```sh
+npm run report:open
+```
