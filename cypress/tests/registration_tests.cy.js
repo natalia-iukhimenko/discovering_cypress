@@ -1,5 +1,5 @@
 const { faker } = require("@faker-js/faker");
-import {checkStatus200} from "../../support/api/check_utils";
+import {checkStatus200} from "../support/api/check_utils";
 
 describe("API tests", () => {
     it("Registration & login scenario", () => {
